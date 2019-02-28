@@ -1,0 +1,17 @@
+.btn-start {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-true {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-false {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
