@@ -22,7 +22,7 @@ var currentQ = 0;
 console.log(gameQuestions)
 var correct = 0;
 var wrong =0;
-var timeCountDown = 10;
+var timeCountDown = 60;
 
 
 
@@ -73,17 +73,14 @@ console.log("clickedd", $(this).text())
 console.log("Our answer is ", gameQuestions[currentQ].answer)
 
 if (gameQuestions[currentQ].answer === true && $(this).text() === "true"){
-    alert("you won");
     currentQ++
     correct++
     displayQuestion();
 } else if (gameQuestions[currentQ].answer === false && $(this).text() === "false"){
-    alert("you won")
     currentQ++
     correct++
     displayQuestion();
 } else {
-    alert("wrong")
     currentQ++
     wrong++
     displayQuestion();
@@ -93,7 +90,7 @@ if (gameQuestions[currentQ].answer === true && $(this).text() === "true"){
 $("#start").on("click", function () {
 $("#gameStartPage").remove();
     displayQuestion();
-
+    
 
 });
 
